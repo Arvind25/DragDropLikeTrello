@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+        <title>Drag and Drop Components like Trello</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+        <script src="./script.js"></script>
+    </head>
+
+    <body>
+        <div class="task-board">
+            <ul class="tasks" id="task-parent">
+                <li class="status-card" id="new-tasks">
+                    <div class="card-header">
+                        <span class="card-header-text">New</span>
+                    </div>
+                    <ul class="sortable ui-sortable" id="draggable-new-tasks">
+                        <li class="text-row ui-sortable-handle" id="new-task-1">new-task-1</li>
+                        <li class="text-row ui-sortable-handle" id="new-task-2">new-task-2</li>
+                    </ul>
+                </li>
+                <li class="status-card" id="inprogress-tasks">
+                    <div class="card-header">
+                        <span class="card-header-text">In Progress</span>
+                    </div>
+                    <ul class="sortable ui-sortable" id="draggable-in-progress-tasks">
+                        <li class="text-row ui-sortable-handle" id="in-progress-task-1">in-progress-task-1</li>
+                    </ul>
+                </li>
+                <li class="status-card" id="pending-tasks">
+                    <div class="card-header">
+                        <span class="card-header-text">Pending</span>
+                    </div>
+                    <ul class="sortable ui-sortable" id="draggable-pending-tasks">
+                        <li class="text-row ui-sortable-handle" id="pending-task-1">pending-task-1</li>
+                    </ul>
+                </li>
+            </ul>
+            <div style="float:right; margin-right:10px;">
+                <input type="text" placeholder="Enter title" id="titleInput" maxlength="10" />
+                <input type="button" id="createBoxBtn" value="Create"></input>
+            </div>
+    </body>
+
+</html>
